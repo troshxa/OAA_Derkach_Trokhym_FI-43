@@ -1,0 +1,14 @@
+# MSVC build output
+*.exe
+*.obj
+*.pdb
+*.ilk
+*.idb
+
+# CMake / build directories
+build/
+out/
+
+# Editor settings
+.vscode/
+.vs/
