@@ -24,7 +24,6 @@ namespace
     };
 }
 
-
 std::vector<Token> tokenizer(const std::string& text){
     std::vector<Token> tokens;
     Token temp;
@@ -90,7 +89,7 @@ std::vector<Token> tokenizer(const std::string& text){
             }
             word = text.substr(i, j - i);
             std::string upper = word;
-            for(size_t k =0;k<word.length();k++) upper[k]=std::toupper(upper[k]);
+            for(size_t k =0; k<word.length(); k++) upper[k]=std::toupper(upper[k]);
             auto it = keyWords.find(upper);
             if (it !=keyWords.end()){
                 temp.type = it->second;

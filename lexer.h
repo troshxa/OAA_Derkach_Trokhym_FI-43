@@ -16,3 +16,4 @@ struct Token {
 };
 
 std::vector<Token> tokenizer(const std::string& text);
+std::string toString(TokenType type);
